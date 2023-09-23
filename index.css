@@ -191,6 +191,8 @@ font-family: 'Rajdhani', sans-serif;
 }
 .fa-readme{
     font-size: 40px;
+    position: relative;
+    left: 5px;
 }
 h4{
     font-size: 20px;
@@ -204,19 +206,19 @@ h4{
 }
 .web>p{
      line-height: 27px;
-     border-left: 1px solid rgb(245, 233, 233);
+     border-left: 1px solid rgb(212, 205, 205);
      padding-left: 40px;
      margin-left: -41px;
 }
 .circle1{
     position: relative;
     top: 120px;
-   left: -34px;
+   left: -29px;
     
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color:rgb(245, 233, 233);
+    background-color:rgb(212, 205, 205)
 }
 .circle2{
     position: relative;
@@ -226,7 +228,7 @@ h4{
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color:rgb(245, 233, 233);
+    background-color:rgb(212, 205, 205)
 }
 .circle3{
     position: relative;
@@ -236,7 +238,7 @@ h4{
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color:rgb(245, 233, 233);
+    background-color:rgb(212, 205, 205);
 }
 .fa-gears{
     font-size: 40px;
