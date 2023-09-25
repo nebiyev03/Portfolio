@@ -131,9 +131,10 @@ table {
 
 header {
     position: fixed;
+    z-index: 999;
     width: 100%;
     height: 100px;
-    background-color:black;
+    background-color: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -263,12 +264,12 @@ h1 {
     cursor: pointer;
     margin: 5px;
     transition: 0.3s all ease-in-out;
-    color: rgb(91, 91, 94);
+    color: black;
     font-size: 15px;
 }
 
 .logo:hover {
-    color: black;
+    color: rgb(91, 91, 94);
 }
 
 .info {
@@ -405,23 +406,17 @@ h2 {
     color: black;
     width: 55%;
     height: 100px;
-cursor: pointer;
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .boxs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     height: 400px;
     gap: 35px;
-
-
-
-
-
 }
 
 .photos {
@@ -441,76 +436,89 @@ cursor: pointer;
 .photo {
     width: 280px;
     height: 310px;
+    transition: 0.5s all ease-in;
+}
+
+.photo:hover {
+    box-shadow: 1px 1px 6px 3px rgb(172, 171, 171);
 }
 
 .sira2 {
     height: 250px;
     display: flex;
     justify-content: space-around;
-
-
 }
-.content4{
+
+.content4 {
     width: 100%;
-    height: 500px;
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+    height: 300px;
+    padding-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-.contact4{
-    margin-left: -150px; 
+
+.contact4 {
+    margin-left: -150px;
     margin-top: -150px;
 }
-.tezbazar{
+
+.tezbazar {
     margin-left: -60px;
 }
-.left4{
+
+.left4 {
     margin-left: 80px;
     height: 400px;
 }
-.ps{
+
+.ps {
     margin-top: 20px;
-   
     width: 280px;
     height: 170px;
 }
-.contact5{
+
+.contact5 {
     position: relative;
     top: 30px;
 }
-.right4{
-   width: 600px;
-   height: 240px;
- 
-   position: relative;
-   right: 150px;
+
+.right4 {
+    width: 600px;
+    height: 240px;
+    position: relative;
+    right: 150px;
 }
-input{
+
+input {
     width: 47%;
     height: 30px;
     outline: none;
     border: none;
     border-bottom: 1px solid gray;
 }
-.inputs{
+
+.inputs {
     display: flex;
     justify-content: space-between;
 }
-textarea{
+
+textarea {
     padding-top: 20px;
-   width: 595px;
-   height: 80px;
-   outline: none;
-   border: none;
+    width: 595px;
+    height: 80px;
+    outline: none;
+    border: none;
     border-bottom: 1px solid gray;
 }
-button:hover{
-     .fa-arrow-right{
-       transform: translateX(40%);
-     }
-} 
-button{
+
+button:hover {
+    .fa-arrow-right {
+        transform: translateX(40%);
+    }
+}
+
+button {
     cursor: pointer;
     height: 40px;
     width: 140px;
@@ -521,9 +529,30 @@ button{
     bottom: -20px;
     right: -460px;
 }
-.fa-arrow-right{
+
+.fa-arrow-right {
     position: relative;
     left: 2px;
     transform: translate(0%);
     transition: 0.2s all ease-in;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left5 {
+    font-size: 45px;
+    color: black;
+    position: relative;
+    left: -40px;
+}
+
+.right5 {
+    position: relative;
+    right: -80px;
 }
