@@ -193,7 +193,8 @@ nav>ul>li>a {
     color: white;
 }
 
-h1 {
+#typewriter-text {
+    
     font-size: 70px;
     color: white;
 }
@@ -556,3 +557,5 @@ footer {
     position: relative;
     right: -80px;
 }
+
+

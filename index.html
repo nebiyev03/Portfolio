@@ -12,6 +12,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="./index.css">
 </head>
+<style>
+    #typewriter-text {
+        overflow: hidden; /* Hide overflowing text */
+        border-right: 2px solid #000; /* Create a cursor effect */
+        white-space: nowrap; /* Prevent text from wrapping */
+        font-size: 70px;
+    }
+</style>
 
 <body>
 
@@ -33,7 +41,7 @@
         </header>
         <div class="content-1">
             <div class="left-1">
-                <h1>I'M LUCY DOE</h1>
+                <h1 id="typewriter-text"></h1>
                 <p>W E B D E V E L O P E R</p>
             </div>
             <div class="right-1">
@@ -172,5 +180,22 @@
     <div class="right5">@Copyright By Codexfusion</div>
    </footer>
    
+   <script>
+    const text = "I'M LUCY DOE";
+    const speed = 100; // Typing speed in milliseconds
+    const element = document.getElementById("typewriter-text");
+    let i = 0;
+
+    function typeWriter() {
+        if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+
+    // Start the typewriter effect when the page loads
+    window.onload = typeWriter;
+</script>
 
 </html>
